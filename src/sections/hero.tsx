@@ -5,7 +5,7 @@ import { GiRose } from 'react-icons/gi';
 const Hero = () => {
   return (
     <section className="py-16 md:py-24">
-      <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-col lg:flex-row items-center justify-between">
+      <div className="container mx-auto pt-4 md:px-8 lg:px-16 flex flex-col lg:flex-row items-center justify-between">
         {/* Left Column */}
         <div className="lg:w-2/5 text-center lg:text-left mb-8 lg:mb-0 ">
           <div className="inline-flex items-center bg-white text-purple-700 rounded-full px-6 py-4 mb-8 gap-4">
@@ -58,7 +58,7 @@ const Hero = () => {
 
         {/* Right Column */}
         <div className="lg:w-3/5 relative">
-          <Image src="/assets/a.png" alt="Hero Image" width={600} height={600}  className='ml-40'/>
+          <Image src="/assets/a.png" alt="Hero Image" width={600} height={600}  className='ml-40 mb-[-95px]'/>
           {/* Badges */}
           <div className="absolute top-35 right-35 bg-white rounded-full shadow-md p-2 flex items-center text-sm text-gray-700">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-green-500" viewBox="0 0 20 20" fill="currentColor">
