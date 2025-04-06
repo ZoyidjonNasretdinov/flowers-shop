@@ -1,10 +1,11 @@
 import Layout from '@/layout/layout/layout'
+import OccasionBar from '@/ui/Occasion'
 import React from 'react'
 
 const Home = () => {
   return (
     <Layout>
-      Home
+      <OccasionBar />
     </Layout>
   )
 }
