@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { IoFlowerSharp } from 'react-icons/io5';
+import { GiRose } from 'react-icons/gi';
 
 const OccasionBar = () => {
   const occasions = [
@@ -23,7 +23,7 @@ const OccasionBar = () => {
             className="inline-flex items-center space-x-3 mr-10 hover:text-purple-200"
           >
             <span className="text-[24px] font-medium">{occasion.name}</span>
-            <IoFlowerSharp size={20}/>
+            <GiRose size={20}/>
           </Link>
         ))}
       </div>
