@@ -4,6 +4,7 @@ import DealsOfTheDay from '@/sections/deals-of-the-day'
 import Hero from '@/sections/hero'
 import NewArrivalProducts from '@/sections/new-arrival-products'
 import { DealsCarousel, Occasions } from '@/sections/occasions'
+import Testimonials from '@/sections/Testimonials'
 import TopSellerProducts from '@/sections/top-seller-product'
 import OccasionBar from '@/ui/Occasion'
 import React from 'react'
@@ -20,6 +21,7 @@ const Home = () => {
       <NewArrivalProducts />
       <OccasionBar />
       <DealsOfTheDay />
+      <Testimonials />
     </Layout>
   )
 }
