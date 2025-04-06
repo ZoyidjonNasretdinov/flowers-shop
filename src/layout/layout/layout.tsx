@@ -4,9 +4,9 @@ import Footer from '../footer/footer';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="layout">
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="content">
+      <main className="flex-grow">
         {children}
       </main>
       <Footer />
@@ -14,4 +14,4 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   )
 }
 
-export default Layout
+export default Layout;
