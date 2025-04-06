@@ -1,5 +1,6 @@
 import Layout from '@/layout/layout/layout'
 import AboutSection from '@/sections/about-section'
+import DealsOfTheDay from '@/sections/deals-of-the-day'
 import Hero from '@/sections/hero'
 import NewArrivalProducts from '@/sections/new-arrival-products'
 import { DealsCarousel, Occasions } from '@/sections/occasions'
@@ -17,6 +18,8 @@ const Home = () => {
       <TopSellerProducts />
       <OccasionBar />
       <NewArrivalProducts />
+      <OccasionBar />
+      <DealsOfTheDay />
     </Layout>
   )
 }
