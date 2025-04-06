@@ -48,6 +48,33 @@ const Header = () => {
 
           {/* Icons */}
           <div className="flex items-center space-x-4 text-gray-700">
+            <div className="flex space-x-1">
+              <div className="flex items-center space-x-2">
+                <label htmlFor="language">🌐</label>
+                <select
+                  id="language"
+                  className="bg-purple-600 border border-purple-500 text-white px-2 py-1 rounded-md focus:outline-none"
+                >
+                  <option>English</option>
+                  <option>Русский</option>
+                  <option>Español</option>
+                  <option>Français</option>
+                  <option>O‘zbekcha</option>
+                </select>
+              </div>
+              <div className="flex items-center space-x-2">
+                <label htmlFor="currency">💱</label>
+                <select
+                  id="currency"
+                  className="bg-purple-600 border border-purple-500 text-white px-2 py-1 rounded-md focus:outline-none"
+                >
+                  <option>USD</option>
+                  <option>EUR</option>
+                  <option>UZS</option>
+                  <option>RUB</option>
+                </select>
+              </div>
+            </div>
             <button className="hover:text-purple-600 focus:outline-none">
               <FaSearch />
             </button>
