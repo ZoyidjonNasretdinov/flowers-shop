@@ -13,7 +13,7 @@ const OccasionBar = () => {
   ];
 
   return (
-    <section className="py-5">
+    <section>
       <div className="bg-purple-600 text-white py-4 overflow-hidden relative">
       <div className="flex animate-marquee whitespace-nowrap">
         {[...occasions, ...occasions].map((occasion, idx) => (
