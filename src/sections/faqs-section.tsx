@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import { BiConversation } from 'react-icons/bi';
 
 const FAQsSection = () => {
   const [expandedQuestion, setExpandedQuestion] = useState('same-day-delivery');
@@ -79,11 +80,9 @@ const FAQsSection = () => {
             ))}
           </div>
           <div className="bg-purple-600 text-white rounded-md shadow-md p-6 flex flex-col justify-center items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mb-4" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9h6v2H7V9z" clipRule="evenodd" />
-            </svg>
-            <h3 className="text-lg font-semibold mb-2">You have different questions?</h3>
-            <p className="text-sm opacity-80 mb-4 text-center">Our team will answer all your questions. We ensure a quick response.</p>
+            <BiConversation size={152}/>
+            <h3 className="text-lg font-semibold mb-4">You have different questions?</h3>
+            <p className="text-sm opacity-80 mb-6 text-center">Our team will answer all your questions. We ensure a quick response.</p>
             <button className="bg-white text-purple-600 font-semibold py-2 px-6 rounded-md hover:bg-purple-100 transition duration-300 focus:outline-none">
               Contact Us
             </button>

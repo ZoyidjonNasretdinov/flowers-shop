@@ -1,12 +1,12 @@
 const NewsletterSubscription = () => {
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-[100px] bg-gray-50">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-sm font-semibold text-purple-600 uppercase tracking-wide mb-2">Our Newsletter</h2>
-        <p className="text-2xl font-bold text-gray-800 mb-4">
+        <h2 className="text-[16px] font-semibold text-gray-600 uppercase tracking-wide mb-2">Our Newsletter</h2>
+        <p className="text-[32px] font-bold text-purple-800 mb-4">
           Subscribe to Our Newsletter to <br className="sm:hidden" /> Get Updates on Our Latest Offers
         </p>
-        <p className="text-gray-600 mb-6">
+        <p className="text-gray-600 mb-8">
           Get 20% off on your first order just by subscribing to our newsletter
         </p>
         <form className="max-w-md mx-auto flex">
