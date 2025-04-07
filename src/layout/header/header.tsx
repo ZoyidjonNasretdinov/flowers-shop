@@ -1,29 +1,29 @@
 import React from 'react';
 import Link from 'next/link';
 import { FaSearch, FaHeart, FaUser, FaShoppingCart } from 'react-icons/fa';
-import { BsFacebook, BsInstagram, BsYoutube } from 'react-icons/bs';
+import { BsCurrencyExchange, BsFacebook, BsInstagram, BsTranslate, BsYoutube } from 'react-icons/bs';
 import { RiPinterestFill, RiTelegram2Fill } from 'react-icons/ri';
 import { FaShop } from 'react-icons/fa6';
 
 const Header = () => {
   return (
     <header className="bg-purple-700 text-white py-2">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center py-[18px]">
         <div>
           card:
         </div>
 
         {/* Left Section */}
         <div className="flex items-center justify-center space-x-4">
-          <p className="text-sm">GET 20% OFF for your first order. <Link href="/signup" className="underline">Sign up now</Link></p>
+          <p className="text-[18px]">GET 20% OFF for your first order. <Link href="/signup" className="underline">Sign up now</Link></p>
         </div>
 
         {/* Right Section - Social Icons */}
-        <div className="flex items-center space-x-3">
-          <Link href="#" className="hover:opacity-75"><BsFacebook /></Link>
-          <Link href="#" className="hover:opacity-75"><RiTelegram2Fill /></Link>
-          <Link href="#" className="hover:opacity-75"><BsInstagram /></Link>
-          <Link href="#" className="hover:opacity-75"><BsYoutube /></Link>
+        <div className="flex items-center space-x-4">
+          <Link href="#" className="hover:opacity-75 text-[20px]"><BsFacebook /></Link>
+          <Link href="#" className="hover:opacity-75 text-[20px]"><RiTelegram2Fill /></Link>
+          <Link href="#" className="hover:opacity-75 text-[20px]"><BsInstagram /></Link>
+          <Link href="#" className="hover:opacity-75 text-[20px]"><BsYoutube /></Link>
         </div>
       </div>
 
@@ -41,7 +41,7 @@ const Header = () => {
           </Link>
 
           {/* Navigation Links */}
-          <nav className="hidden md:flex space-x-6 text-gray-700">
+          <nav className="hidden md:flex space-x-6 text-gray-700 text-[18px]">
             <Link href="/" className="hover:text-purple-600">Home</Link>
             <Link href="/shop" className="hover:text-purple-600">Shop</Link>
             <Link href="/occasions" className="hover:text-purple-600">Occasions</Link>
@@ -55,20 +55,20 @@ const Header = () => {
           <div className="flex items-center space-x-4 text-gray-700">
             <div className="flex space-x-1">
               <div className="flex items-center space-x-2">
-                <label htmlFor="language">🌐</label>
+                <label htmlFor="language"><BsTranslate /></label>
                 <select
                   id="language"
                   className="bg-purple-600 border border-purple-500 text-white px-2 py-1 rounded-md focus:outline-none"
                 >
-                  <option>English</option>
-                  <option>Русский</option>
-                  <option>Español</option>
-                  <option>Français</option>
-                  <option>O‘zbekcha</option>
+                    <option>English</option>
+                    <option>O‘zbekcha</option>
+                    <option>العربية</option>
+                    <option>Русский</option>
+                    <option>Türkçe</option>
                 </select>
               </div>
               <div className="flex items-center space-x-2">
-                <label htmlFor="currency">💱</label>
+                <label htmlFor="currency"><BsCurrencyExchange /></label>
                 <select
                   id="currency"
                   className="bg-purple-600 border border-purple-500 text-white px-2 py-1 rounded-md focus:outline-none"
