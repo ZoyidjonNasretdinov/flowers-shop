@@ -25,8 +25,7 @@ const Breadcrumbs = () => {
   return (
     <div className="py-4 bg-gray-100 text-gray-600 text-sm">
       <div className="container mx-auto px-4">
-        <span className="mr-2">Shop</span>
-        <span className="mx-2">/</span>
+        <span className="mr-2">Breadcrumbs:</span>
         {breadcrumbItems.map((item, index) => (
           <span key={index}>
             {index > 0 && <span className="mx-2">/</span>}

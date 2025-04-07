@@ -2,13 +2,17 @@ import React from 'react';
 import Link from 'next/link';
 import { FaSearch, FaHeart, FaUser, FaShoppingCart } from 'react-icons/fa';
 import { BsFacebook, BsInstagram, BsYoutube } from 'react-icons/bs';
-import { RiPinterestFill } from 'react-icons/ri';
+import { RiPinterestFill, RiTelegram2Fill } from 'react-icons/ri';
 import { FaShop } from 'react-icons/fa6';
 
 const Header = () => {
   return (
     <header className="bg-purple-700 text-white py-2">
       <div className="container mx-auto flex justify-between items-center">
+        <div>
+          card:
+        </div>
+
         {/* Left Section */}
         <div className="flex items-center justify-center space-x-4">
           <p className="text-sm">GET 20% OFF for your first order. <Link href="/signup" className="underline">Sign up now</Link></p>
@@ -17,7 +21,7 @@ const Header = () => {
         {/* Right Section - Social Icons */}
         <div className="flex items-center space-x-3">
           <Link href="#" className="hover:opacity-75"><BsFacebook /></Link>
-          <Link href="#" className="hover:opacity-75"><RiPinterestFill /></Link>
+          <Link href="#" className="hover:opacity-75"><RiTelegram2Fill /></Link>
           <Link href="#" className="hover:opacity-75"><BsInstagram /></Link>
           <Link href="#" className="hover:opacity-75"><BsYoutube /></Link>
         </div>
@@ -41,6 +45,7 @@ const Header = () => {
             <Link href="/" className="hover:text-purple-600">Home</Link>
             <Link href="/shop" className="hover:text-purple-600">Shop</Link>
             <Link href="/occasions" className="hover:text-purple-600">Occasions</Link>
+            <Link href="/generetor" className="hover:text-purple-600">Generetor</Link>
             <Link href="/about" className="hover:text-purple-600">About Us</Link>
             <Link href="/contact" className="hover:text-purple-600">Contact Us</Link>
             <Link href="/blogs" className="hover:text-purple-600">Blogs</Link>
