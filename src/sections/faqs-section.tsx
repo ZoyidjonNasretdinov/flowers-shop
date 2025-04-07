@@ -46,15 +46,15 @@ const FAQsSection = () => {
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
-          <h2 className="text-sm font-semibold text-purple-600 uppercase tracking-wide mb-1">FAQs</h2>
-          <p className="text-2xl font-bold text-gray-800">Question? Look here.</p>
+          <h2 className="text-[18px] font-semibold text-gray-600 uppercase tracking-wide mb-3">FAQs</h2>
+          <p className="text-[36px] font-bold text-purple-800">Question? Look here.</p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="space-y-3">
             {faqData.map((faq) => (
-              <div key={faq.id} className="bg-white rounded-md shadow-sm overflow-hidden">
+              <div key={faq.id} className="bg-white rounded-md shadow-sm overflow-hidden py-3">
                 <button
-                  className={`w-full text-left py-3 px-4 font-semibold text-gray-800 flex items-center justify-between ${expandedQuestion === faq.id ? 'bg-purple-100' : 'hover:bg-gray-100'}`}
+                  className={`w-full text-left py-3 px-4 font-semibold text-gray-800 flex items-center justify-between py-3" ${expandedQuestion === faq.id ? 'bg-purple-100' : 'hover:bg-gray-100 '}`}
                   onClick={() => toggleQuestion(faq.id)}
                   aria-expanded={expandedQuestion === faq.id}
                   aria-controls={`faq-answer-${faq.id}`}

@@ -18,8 +18,8 @@ const FollowUsInstagram = () => {
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-[18px] font-semibold text-gray-600 uppercase tracking-wide mb-5">Follow Us</h2>
-          <p className="text-[26px] font-extrabold text-purple-800">Follow Us On Instagram</p>
+          <h2 className="text-[18px] font-semibold text-gray-600 uppercase tracking-wide mb-3">Follow Us</h2>
+          <p className="text-[36px] font-extrabold text-purple-800">Follow Us On Instagram</p>
         </div>
 
         <div className="grid grid-cols-6 grid-rows-2 gap-4">
@@ -43,7 +43,7 @@ const FollowUsInstagram = () => {
           <GridItem post={instagramPosts[7]} />
         </div>
 
-        <div className="text-center mt-10">
+        <div className="text-center mt-12">
           <a
             href="https://www.instagram.com/your_instagram_handle"
             target="_blank"
