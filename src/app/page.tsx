@@ -7,7 +7,7 @@ import Hero from '@/sections/hero'
 import LatestNewsBlogs from '@/sections/latest-new-blogs'
 import NewArrivalProducts from '@/sections/new-arrival-products'
 import NewsletterSubscription from '@/sections/news-latter-subscription'
-import { DealsCarousel, Occasions } from '@/sections/occasions'
+import OccasionsSection from '@/sections/occasion-section'
 import Testimonials from '@/sections/Testimonials'
 import TopSellerProducts from '@/sections/top-seller-product'
 import OccasionBar from '@/ui/Occasion'
@@ -17,8 +17,7 @@ const Home = () => {
   return (
     <Layout>
       <Hero />
-      {/* <DealsCarousel />
-      <Occasions /> */}
+      <OccasionsSection />
       <AboutSection />
       <TopSellerProducts />
       <OccasionBar />
