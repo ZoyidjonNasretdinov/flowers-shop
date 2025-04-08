@@ -5,7 +5,7 @@ const AboutSection = () => {
     <section className="bg-white py-20">
       <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-col lg:flex-row items-center justify-between gap-12">
         {/* Left - Image with Play Button and Icons */}
-        <div className="lg:w-1/2 relative rounded-full overflow-hidden shadow-xl aspect-square bg-gray-100">
+        <div className="lg:w-1/2 relative rounded-full overflow-hidden shadow-xl aspect-square bg-gray-100 animate-fade-in-left">
           <Image
             src="/assets/about.png"
             alt="Woman holding flowers"
@@ -33,7 +33,7 @@ const AboutSection = () => {
         </div>
 
         {/* Right - Text */}
-        <div className="lg:w-1/2 text-center lg:text-left">
+        <div className="lg:w-1/2 text-center lg:text-left animate-fade-in-right">
           <h2 className="text-sm font-semibold text-purple-600 uppercase tracking-wider mb-2">About Us</h2>
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6 leading-tight">
           <span className="text-purple-600">Delivering Nature's</span> Beauty to Your Door

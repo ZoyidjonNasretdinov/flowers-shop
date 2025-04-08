@@ -7,13 +7,13 @@ const Hero = () => {
     <section className="py-16 md:py-24">
       <div className="container mx-auto pt-4 md:px-8 lg:px-16 flex flex-col lg:flex-row items-center justify-between">
         {/* Left Column */}
-        <div className="lg:w-2/5 text-center lg:text-left mb-8 lg:mb-0 ">
+        <div className="lg:w-2/5 text-center lg:text-left mb-8 lg:mb-0 animate-fade-in-left">
           <div className="inline-flex items-center bg-white text-purple-700 rounded-full px-6 py-4 mb-8 gap-4">
             {/* Replace with your actual flower shop icon */}
             <GiRose size={20}/>
             <span className="text-[16px] font-medium">Your Trusted Online Flower Shop</span>
           </div>
-          <h1 className="text-[90px] md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
+          <h1 className="text-[90px] md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 leading-15">
             The Ultimate <span className="text-purple-600">Flower Shopping Destination</span>
           </h1>
           <p className="text-gray-600 mb-10 lg:mb-8">
@@ -57,7 +57,7 @@ const Hero = () => {
         </div>
 
         {/* Right Column */}
-        <div className="lg:w-3/5 relative">
+        <div className="lg:w-3/5 relative animate-fade-in-right">
           <Image src="/assets/hero.png" alt="Hero Image" width={600} height={600}  className='ml-40 mb-[-95px]'/>
           {/* Badges */}
           <div className="absolute top-35 right-35 bg-white rounded-full shadow-md p-2 flex items-center text-sm text-gray-700">
