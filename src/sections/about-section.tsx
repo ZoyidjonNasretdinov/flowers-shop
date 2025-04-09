@@ -7,17 +7,15 @@ const AboutSection = () => {
         {/* Left - Image with Play Button and Icons */}
         <div className="lg:w-1/2 relative rounded-full overflow-hidden shadow-xl aspect-square bg-gray-100 animate-fade-in-left">
           <Image
-            src="/assets/about.png"
+            src="/assets/about-image.jpg"
             alt="Woman holding flowers"
             fill
-            className="object-cover"
+            className="object-cover "
             priority
           />
-          <button className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white/70 hover:bg-white/90 text-purple-600 shadow-lg rounded-full w-16 h-16 flex items-center justify-center transition">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM6.79 7.52a.75.75 0 011.06-.04l4.5 4a.75.75 0 01-1.06 1.06l-4.5-4a.75.75 0 01.04-1.02z" clipRule="evenodd" />
-            </svg>
-          </button>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-purple-600 shadow-lg rounded-full w-156 h-156 flex items-center justify-center transition border-6 border-purple-600 hover:border-purple-700">
+           
+          </div>
 
           {/* Decorative Icons */}
           <div className="absolute bottom-6 left-6 text-pink-500">
@@ -34,24 +32,24 @@ const AboutSection = () => {
 
         {/* Right - Text */}
         <div className="lg:w-1/2 text-center lg:text-left animate-fade-in-right">
-          <h2 className="text-sm font-semibold text-purple-600 uppercase tracking-wider mb-2">About Us</h2>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6 leading-tight">
+          <h2 className="text-[24px] font-semibold text-gray-600 uppercase tracking-wider mb-4">About Us</h2>
+          <h1 className="text-[36px] md:text-5xl font-extrabold text-gray-800 mb-8 leading-tight">
           <span className="text-purple-600">Delivering Nature's</span> Beauty to Your Door
           </h1>
-          <p className="text-gray-600 mb-8 leading-relaxed">
+          <p className="text-gray-600 mb-10 leading-relaxed">
             Experience the joy of fresh, vibrant florals from the comfort of your home. Our passion for flowers is rooted in nature, sustainability, and love.
           </p>
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-3 gap-6 mb-8 ">
+          <div className="grid grid-cols-3  mb-8 bg-purple-500 rounded-lg shadow-lg">
             {[
               { number: '20+', label: 'Categories' },
               { number: '1000+', label: 'Products' },
               { number: '99%', label: 'Happy Customers' },
             ].map((item, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl font-bold text-purple-600">{item.number}</div>
-                <div className="text-sm text-gray-500">{item.label}</div>
+              <div key={index} className="text-center py-6">
+                <div className="text-[48px] font-extrabold text-white">{item.number}</div>
+                <div className="text-sm text-white">{item.label}</div>
               </div>
             ))}
           </div>
