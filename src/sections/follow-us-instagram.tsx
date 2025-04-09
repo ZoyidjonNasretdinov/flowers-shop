@@ -2,15 +2,15 @@ import Image from 'next/image';
 
 const FollowUsInstagram = () => {
   const instagramPosts = [
-    { imageUrl: 'https://img.freepik.com/premium-photo/woman-hijab-stands-front-house-with-bush-flowers_867577-28.jpg', altText: '1' },
-    { imageUrl: 'https://img.freepik.com/premium-photo/woman-hijab-stands-front-house-with-bush-flowers_867577-28.jpg', altText: '2' },
-    { imageUrl: 'https://img.freepik.com/premium-photo/woman-hijab-stands-front-house-with-bush-flowers_867577-28.jpg', altText: '3' },
-    { imageUrl: 'https://img.freepik.com/premium-photo/woman-hijab-stands-front-house-with-bush-flowers_867577-28.jpg', altText: '4' },
-    { imageUrl: 'https://img.freepik.com/premium-photo/woman-hijab-stands-front-house-with-bush-flowers_867577-28.jpg', altText: '5' },
-    { imageUrl: 'https://img.freepik.com/premium-photo/woman-hijab-stands-front-house-with-bush-flowers_867577-28.jpg', altText: '6' },
-    { imageUrl: 'https://img.freepik.com/premium-photo/woman-hijab-stands-front-house-with-bush-flowers_867577-28.jpg', altText: '7' },
-    { imageUrl: 'https://img.freepik.com/premium-photo/woman-hijab-stands-front-house-with-bush-flowers_867577-28.jpg', altText: '8' },
-    { imageUrl: 'https://img.freepik.com/premium-photo/woman-hijab-stands-front-house-with-bush-flowers_867577-28.jpg', altText: '9' }, // 2x2 image
+    { imageUrl: '/assets/instagram-image-1.jpg', altText: '1' },
+    { imageUrl: '/assets/instagram-image-2.jpg', altText: '2' },
+    { imageUrl: '/assets/instagram-image-3.jpg', altText: '3' },
+    { imageUrl: '/assets/instagram-image-4.jpg', altText: '4' },
+    { imageUrl: '/assets/instagram-image-5.jpg', altText: '5' },
+    { imageUrl: '/assets/instagram-image-6.jpg', altText: '6' },
+    { imageUrl: '/assets/instagram-image-7.jpg', altText: '7' },
+    { imageUrl: '/assets/instagram-image-8.jpg', altText: '8' },
+    { imageUrl: '/assets/instagram-image-9.jpg', altText: '9' }, // 2x2 image
   ];
  
 
