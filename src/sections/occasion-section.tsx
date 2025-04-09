@@ -34,7 +34,7 @@ const OccasionsSection = () => {
       </style>
 
       <div className="container mx-auto overflow-hidden">
-        <h2 className="text-[18px] font-bold text-gray-600 mb-4 text-center">Occasions</h2>
+        <h2 className="text-[24px] font-bold text-gray-600 mb-4 text-center">Occasions</h2>
         <h3 className="text-[36px] font-bold text-purple-700 mb-8 text-center">Shop By Occasions</h3>
 
         <div className="relative w-full overflow-hidden">

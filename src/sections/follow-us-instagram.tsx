@@ -48,7 +48,7 @@ const FollowUsInstagram = () => {
             href="https://www.instagram.com/your_instagram_handle"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-4 px-6 rounded-full transition duration-300"
+            className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-5 px-6 rounded-full transition duration-600 box-shadow-lg"
           >
             Visit Our Instagram
           </a>

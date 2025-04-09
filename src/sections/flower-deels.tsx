@@ -7,7 +7,7 @@ const FlowerDeals = () => {
       discount: 'Flat 20% Discount',
       title: 'Lovely Fresh Bouquets',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      image: '/assets/occasions-1.jpg',
+      image: '/assets/occasion-card-1.png',
       buttonText: 'Shop Now',
       buttonLink: '#',
       bgColor: 'bg-white',
@@ -17,7 +17,7 @@ const FlowerDeals = () => {
       discount: 'Flat 25% Discount',
       title: 'Pure Bloom Collection',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      image: '/assets/occasions-1.jpg',
+      image: '/assets/occasion-card-2.png',
       buttonText: 'Shop Now',
       buttonLink: '#',
       bgColor: 'bg-purple-600',
@@ -30,12 +30,12 @@ const FlowerDeals = () => {
       {deals.map((deal, index) => (
         <div
           key={index}
-          className={`relative rounded-2xl shadow-lg overflow-hidden ${deal.bgColor} ${deal.textColor} w-full md:w-[48%] h-[500px] `}
+          className={`relative rounded-2xl shadow-xl overflow-hidden ${deal.bgColor} ${deal.textColor} w-full md:w-[48%] h-[500px] border border-purple-300`}
         >
           <div className="p-8 w-1/2 h-full flex flex-col justify-center z-10 relative">
             <div className="mb-6">
-              <span className="bg-gray-200 text-gray-700 py-3 px-3 rounded-md text-base font-semibold">
-                {deal.discount}
+              <span className="bg-gray-200 text-gray-700 py-3 px-3 rounded-md text-base font-semibold ">
+          {deal.discount}
               </span>
             </div>
             <h3 className="text-[25px] font-bold mb-2">{deal.title}</h3>
