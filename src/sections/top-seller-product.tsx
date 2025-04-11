@@ -77,7 +77,8 @@ const TopSellerProducts = () => {
 
   return (
     <section className="py-12 bg-gray-50">
-      <div className="container mx-auto px-4">
+      
+      <div className="container mx-auto px-4 relative">
         {/* Top Seller Heading */}
         <div className="flex items-center justify-between mb-8">
           <div>
@@ -128,13 +129,13 @@ const TopSellerProducts = () => {
         </div>
 
         {/* Holiday Sales Banner */}
-        <div className="relative rounded-lg overflow-hidden shadow-md">
-          <div className="relative h-[356px] md:h-72 grid grid-cols-6  gap-4">
+        <div className="relative rounded-lg overflow-hidden shadow-md h-[800px]">
+          <div className="relative  md:h-72 grid grid-cols-6  gap-4">
             <div className="col-span-1 relative">
               <Image src="/assets/top-seller-left-image.jpg" alt="Holiday Sales Banner" layout="fill" objectFit="cover" />
             </div>
-            <div className="col-span-4 bg-purple-600 bg-opacity-80 flex flex-col items-center justify-center text-white text-center p-6 bg-[url('/assets/top-seller-main-bg.png')] bg-cover bg-center bg-no-repeat">
-              <h2 className="text-[72px] md:text-2xl font-bold mb-2">Holiday Sales</h2>
+            <div className="col-span-4 h-[800px] bg-purple-600 bg-opacity-80 flex flex-col items-center justify-center text-white text-center p-6 bg-[url('/assets/top-seller-main-bg.png')] bg-cover bg-center bg-no-repeat">
+              <h2 className="text-[144px] md:text-2xl font-bold mb-2">Holiday Sales</h2>
               <p className="mb-4">Get 50% off - Limited Time Offer!</p>
               <div className="flex gap-4 mb-4">
                 <div>

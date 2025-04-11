@@ -1,20 +1,47 @@
+'use client';
+
 import Image from 'next/image';
 
 const AboutSection = () => {
   return (
-    <section className="bg-white py-20">
-      <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-col lg:flex-row items-center justify-between gap-12">
-        {/* Left - Image with Play Button and Icons */}
-        <div className="lg:w-1/2 relative rounded-full overflow-hidden shadow-xl aspect-square bg-gray-100 animate-fade-in-left">
+    <section className="bg-white py-20 relative overflow-hidden">
+      {/* Background Decorative Image using Next.js <Image fill /> */}
+
+      {/* Content */}
+      <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-col lg:flex-row items-center justify-between gap-12 relative z-0  ">
+        <div className="absolute top-1 left-0 w-200 h-200 z-10 ">
           <Image
-            src="/assets/about-image.jpg"
-            alt="Woman holding flowers"
+            src="/assets/about-circle-image.png"
+            alt="Background Decoration"
             fill
             className="object-cover "
             priority
           />
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-purple-600 shadow-lg rounded-full w-156 h-156 flex items-center justify-center transition border-6 border-purple-600 hover:border-purple-700">
-           
+        </div>
+        {/* Left - Image with Play Button and Icons */}
+        <div className="lg:w-1/2 relative rounded-full overflow-hidden shadow-xl aspect-square bg-gray-100 ">
+          <Image
+            src="/assets/about-image.jpg"
+            alt="Woman holding flowers"
+            fill
+            className="object-cover"
+            priority
+          />
+
+          {/* Play Button */}
+          <div
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-purple-600 shadow-lg bg-white rounded-full w-24 h-24 flex items-center justify-center border-4 border-purple-600 hover:border-purple-700 cursor-pointer transition"
+            role="button"
+            aria-label="Play Video"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-10 h-10 text-purple-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path d="M6 4l10 6-10 6V4z" />
+            </svg>
           </div>
 
           {/* Decorative Icons */}
@@ -30,25 +57,25 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Right - Text */}
+        {/* Right - Text Content */}
         <div className="lg:w-1/2 text-center lg:text-left animate-fade-in-right">
           <h2 className="text-[24px] font-semibold text-gray-600 uppercase tracking-wider mb-4">About Us</h2>
           <h1 className="text-[36px] md:text-5xl font-extrabold text-gray-800 mb-8 leading-tight">
-          <span className="text-purple-600">Delivering Nature's</span> Beauty to Your Door
+            <span className="text-purple-600">Delivering Nature's</span> Beauty to Your Door
           </h1>
           <p className="text-gray-600 mb-10 leading-relaxed">
             Experience the joy of fresh, vibrant florals from the comfort of your home. Our passion for flowers is rooted in nature, sustainability, and love.
           </p>
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-3  mb-8 bg-purple-500 rounded-lg shadow-lg">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 bg-purple-500 rounded-lg shadow-lg">
             {[
               { number: '20+', label: 'Categories' },
               { number: '1000+', label: 'Products' },
               { number: '99%', label: 'Happy Customers' },
             ].map((item, index) => (
               <div key={index} className="text-center py-6">
-                <div className="text-[48px] font-extrabold text-white">{item.number}</div>
+                <div className="text-[40px] font-extrabold text-white">{item.number}</div>
                 <div className="text-sm text-white">{item.label}</div>
               </div>
             ))}
