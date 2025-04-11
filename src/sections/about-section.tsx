@@ -58,7 +58,7 @@ const AboutSection = () => {
         </div>
 
         {/* Right - Text Content */}
-        <div className="lg:w-1/2 text-center lg:text-left animate-fade-in-right">
+        <div className="lg:w-1/2 text-center lg:text-left ">
           <h2 className="text-[24px] font-semibold text-gray-600 uppercase tracking-wider mb-4">About Us</h2>
           <h1 className="text-[36px] md:text-5xl font-extrabold text-gray-800 mb-8 leading-tight">
             <span className="text-purple-600">Delivering Nature's</span> Beauty to Your Door

@@ -40,16 +40,24 @@ const OccasionsSection = () => {
         <div className="relative w-full overflow-hidden">
           <ul className="flex w-max space-x-6 md:space-x-8 lg:space-x-10 marquee">
             {looped.map((occasion, index) => (
-                <li key={`${occasion.name}-${index}`} className="flex-shrink-0 text-center">
-                <div className="relative w-48 h-48 rounded-full bg-gray-100 flex items-center justify-center mx-auto">
-                  <Image
-                  src={occasion.image}
-                  alt={occasion.name}
-                  width={192}
-                  height={192}
-                  className="w-48 h-48 object-cover rounded-full"
-                  />
-                </div>
+                <li key={`${occasion.name}-${index}`} className="flex-shrink-0 text-center relative">
+                    <Image
+                      src="/assets/occasion-circle-bg.png"
+                      alt="Border Decoration"
+                      width={192}
+                      height={192}
+                      className="absolute -top-6 -left-1 z-50 w-60 h-60 object-cover rounded-full"
+                      />
+                
+                   <div className="relative w-48 h-48 rounded-full bg-gray-100 flex items-center justify-center mx-auto">
+                     <Image
+                     src={occasion.image}
+                     alt={occasion.name}
+                     width={192}
+                     height={192}
+                     className="w-48 h-48 object-cover rounded-full"
+                      />
+                   </div>
                 <div className="mt-2">
                   <h4 className="text-sm md:text-base font-bold text-gray-800">{occasion.name}</h4>
                   <p className="text-xs md:text-sm text-gray-500">{occasion.count} Products</p>
