@@ -3,16 +3,16 @@ import FlowerDeals from "./flower-deels";
 
 const OccasionsSection = () => {
   const occasions = [
-    { name: 'Weddings', count: 42, image: '/assets/top-seller-img.jpg' },
-    { name: 'Birthday', count: 56, image: '/assets/top-seller-img.jpg' },
-    { name: 'Anniversary', count: 11, image: '/assets/top-seller-img.jpg' },
-    { name: 'Thank You', count: 48, image: '/assets/top-seller-img.jpg' },
-    { name: 'Graduation', count: 13, image: '/assets/top-seller-img.jpg' },
-    { name: 'Get Well Soon', count: 16, image: '/assets/top-seller-img.jpg' },
-    { name: 'Sympathy', count: 22, image: '/assets/top-seller-img.jpg' },
-    { name: 'New Baby', count: 35, image: '/assets/top-seller-img.jpg' },
-    { name: 'Congratulations', count: 28, image: '/assets/top-seller-img.jpg' },
-    { name: 'Just Because', count: 51, image: '/assets/top-seller-img.jpg' },
+    { name: 'Weddings', count: 42, image: '/assets/occasion-icon-weddings.jpg' },
+    { name: 'Birthday', count: 56, image: '/assets/occasion-icon-birthday.jpg' },
+    { name: 'Anniversary', count: 11, image: '/assets/occasion-icon-anniversary.jpg' },
+    { name: 'Thank You', count: 48, image: '/assets/occasion-icon-thank-you.jpg' },
+    { name: 'Graduation', count: 13, image: '/assets/occasion-icon-graduation.jpg' },
+    { name: 'Get Well Soon', count: 16, image: '/assets/occasion-icon-get-well-soon.jpg' },
+    { name: 'Sympathy', count: 22, image: '/assets/iccosion-icon-sympathy.jpg' },
+    { name: 'New Baby', count: 35, image: '/assets/occasion-icon-new-baby.jpg' },
+    { name: 'Congratulations', count: 28, image: '/assets/occasion-icon-congratulation.jpg' },
+    { name: 'Just Because', count: 51, image: '/assets/occosion-icon-just-because.jpg' },
   ];
 
   const looped = [...occasions, ...occasions];

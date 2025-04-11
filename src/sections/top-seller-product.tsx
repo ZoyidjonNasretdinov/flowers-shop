@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import { IoMdStar } from 'react-icons/io';
 
 const TopSellerProducts = () => {
   const products = [
@@ -15,7 +16,7 @@ const TopSellerProducts = () => {
     },
     {
       name: 'Royal Pink Bouquets',
-      image: '/assets/card-img.webp',
+      image: '/assets/card-image-2.png',
       discount: '20% off',
       originalPrice: 60.00,
       discountedPrice: 48.00,
@@ -23,7 +24,7 @@ const TopSellerProducts = () => {
     },
     {
       name: 'Lavenders Bouquets',
-      image: '/assets/card-img.webp',
+      image: '/assets/card-image-3.png',
       discount: '20% off',
       originalPrice: 30.00,
       discountedPrice: 24.00,
@@ -31,7 +32,7 @@ const TopSellerProducts = () => {
     },
     {
       name: 'Rose Bouquets',
-      image: '/assets/card-img.webp',
+      image: '/assets/card-image-4.png',
       discount: '30% off',
       originalPrice: 50.00,
       discountedPrice: 35.00,
@@ -83,7 +84,7 @@ const TopSellerProducts = () => {
             <h2 className="text-[22px] font-semibold text-gray-600 uppercase tracking-wide mb-4">Our Products</h2>
             <p className="text-[48px] font-bold text-purple-800">Our Top Seller Products</p>
           </div>
-          <a href="/products" className="hidden md:inline-block bg-purple-500 border border-purple-300 hover:bg-purple-300 text-white font-semibold py-2 px-4 rounded-full transition duration-300">
+          <a href="/products" className="hidden md:inline-block bg-purple-500 border border-purple-300 hover:bg-purple-300 text-white font-semibold py-3 px-4 rounded-full transition duration-300">
             View All Products
           </a>
         </div>
@@ -93,7 +94,7 @@ const TopSellerProducts = () => {
           {products.map((product, index) => (
             <div key={index} className="bg-gray rounded-lg shadow-md overflow-hidden">
               <div className="relative h-102">
-                <Image src={product.image} alt={product.name} layout="fill" objectFit="cover" />
+                <Image src={product.image} alt={product.name} layout="fill" objectFit="cover"  className='bg-white'/>
                 {product.discount && (
                   <div className="absolute top-2 left-2 bg-pink-500 text-white text-xs font-semibold py-1 px-2 rounded-md">{product.discount}</div>
                 )}
@@ -106,7 +107,7 @@ const TopSellerProducts = () => {
                   </div>
                 )}
               </div>
-              <div className="p-4">
+              <div className="p-4 bg-[url['/assets/top-seller-main']] bg-cover bg-center bg-no-repeat">
                 <h3 className="text-md font-semibold text-gray-800 mb-1">{product.name}</h3>
                 <p className="text-sm text-gray-500 mb-2">Bouquets</p>
                 <div className="flex items-center justify-between">
@@ -117,9 +118,7 @@ const TopSellerProducts = () => {
                     )}
                   </div>
                   <div className="flex items-center">
-                    <svg className="w-4 h-4 text-yellow-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.928c-.586-.243-1.548-.243-2.134 0l-1.094 2.228-2.54-1.293c-.566-.29-1.178.103-1.03 1.647l.879 2.565L.191 8.63c-.692.586-.6 1.69.103 2.228l2.54 1.293-1.094 2.228c-.586.243-.222 1.741.586 1.741h2.518l1.094 2.228c.24.982 1.63.982 1.871 0l1.094-2.228h2.518c.808 0 1.174-1.458.586-1.741l-1.094-2.228 2.54-1.293c.704-.538.796-1.642.103-2.228L15.809 6.27l.879-2.566c.148-1.544-.454-1.938-1.029-1.647l-2.54 1.293-1.094-2.228c-.586-.243-1.277-.243-1.863 0z" />
-                    </svg>
+                     <IoMdStar className='w-4 h-4 text-yellow-400' />
                     <span className="text-sm text-gray-600">{product.rating}</span>
                   </div>
                 </div>
@@ -130,12 +129,12 @@ const TopSellerProducts = () => {
 
         {/* Holiday Sales Banner */}
         <div className="relative rounded-lg overflow-hidden shadow-md">
-          <div className="relative h-56 md:h-72 grid grid-cols-6 gap-4">
+          <div className="relative h-[356px] md:h-72 grid grid-cols-6  gap-4">
             <div className="col-span-1 relative">
-              <Image src="/assets/top-seller-img.jpg" alt="Holiday Sales Banner" layout="fill" objectFit="cover" />
+              <Image src="/assets/top-seller-left-image.jpg" alt="Holiday Sales Banner" layout="fill" objectFit="cover" />
             </div>
-            <div className="col-span-4 bg-purple-600 bg-opacity-80 flex flex-col items-center justify-center text-white text-center p-6">
-              <h2 className="text-xl md:text-2xl font-bold mb-2">Holiday Sales</h2>
+            <div className="col-span-4 bg-purple-600 bg-opacity-80 flex flex-col items-center justify-center text-white text-center p-6 bg-[url('/assets/top-seller-main-bg.png')] bg-cover bg-center bg-no-repeat">
+              <h2 className="text-[72px] md:text-2xl font-bold mb-2">Holiday Sales</h2>
               <p className="mb-4">Get 50% off - Limited Time Offer!</p>
               <div className="flex gap-4 mb-4">
                 <div>
@@ -163,7 +162,7 @@ const TopSellerProducts = () => {
               </a>
             </div>
             <div className="col-span-1 relative">
-              <Image src="/assets/top-seller-img.jpg" alt="Holiday Sales Banner" layout="fill" objectFit="cover" />
+              <Image src="/assets/top-seller-right-image.jpg" alt="Holiday Sales Banner" layout="fill" objectFit="cover" />
             </div>
           </div>
         </div>
