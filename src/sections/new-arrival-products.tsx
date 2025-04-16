@@ -125,8 +125,7 @@ const NewArrivalProducts = () => {
             src="/assets/new-section-image.png"
             alt="Weekly Deals Banner"
             fill
-            className="object-cover rounded-lg"
-            priority
+            className="object-cover rounded-lg w-[256px] h-[256px]"
           />
         </div>
       </div>
