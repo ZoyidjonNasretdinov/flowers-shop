@@ -4,8 +4,8 @@ import { GiRose } from 'react-icons/gi';
 
 const Hero = () => {
   return (
-    <section className="py-16 md:py-24">
-      <div className="container mx-auto pt-4 md:px-8 lg:px-16 flex flex-col lg:flex-row items-center justify-between">
+    <section className="py-16 md:py-24 relative">
+      <div className="container mx-auto pt-4 md:px-8 lg:px-16 flex flex-col lg:flex-row items-center justify-between relative">
         {/* Left Column */}
         <div className="lg:w-2/5 text-center lg:text-left mb-8 lg:mb-0 animate-fade-in-left">
           <div className="inline-flex items-center bg-white text-purple-700 rounded-full px-6 py-4 mb-8 gap-4">

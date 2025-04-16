@@ -2,6 +2,7 @@ import Layout from '@/layout/layout/layout'
 import AboutSection from '@/sections/about-section'
 import DealsOfTheDay from '@/sections/deals-of-the-day'
 import FAQsSection from '@/sections/faqs-section'
+import FeaturesSection from '@/sections/features-section'
 import FollowUsInstagram from '@/sections/follow-us-instagram'
 import Hero from '@/sections/hero'
 import LatestNewsBlogs from '@/sections/latest-new-blogs'
@@ -30,6 +31,7 @@ const Home = () => {
       <FollowUsInstagram />
       <OccasionBar />
       <FAQsSection />
+      <FeaturesSection />
       <NewsletterSubscription />
     </Layout>
   )
