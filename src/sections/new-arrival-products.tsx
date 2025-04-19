@@ -46,8 +46,8 @@ const NewArrivalProducts = () => {
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
-          <h2 className="text-[18px] font-semibold text-purple-600 uppercase tracking-wide mb-4">New Arrival</h2>
-          <p className="text-[36px] font-bold text-gray-800">New Arrival Products</p>
+          <h2 className="text-[18px] font-semibold text-gray-600 uppercase tracking-wide mb-4">New Arrival</h2>
+          <p className="text-[36px] font-bold text-purple-800">New Arrival Products</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {newArrivals.map((product, index) => (
@@ -125,7 +125,7 @@ const NewArrivalProducts = () => {
             src="/assets/new-section-image.png"
             alt="Weekly Deals Banner"
             fill
-            className="object-cover rounded-lg w-[256px] h-[256px]"
+            className="object-cover rounded-lg w-[256px] h-[256px] scale-125"
           />
         </div>
       </div>
