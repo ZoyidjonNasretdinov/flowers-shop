@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const AboutSection = () => {
   return (
-    <section className="bg-white py-20 relative overflow-hidden">
+    <section className="bg-white pb-[200px] pt-[100px] relative overflow-hidden">
       {/* Background Decorative Image using Next.js <Image fill /> */}
 
       {/* Content */}
