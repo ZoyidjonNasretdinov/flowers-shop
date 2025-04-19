@@ -29,10 +29,10 @@ const Testimonials = () => {
     <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-sm font-semibold text-purple-600 uppercase tracking-wide mb-1">
+          <h2 className="text-[24px] font-semibold text-gray-600 uppercase tracking-wide mb-1">
             Testimonial
           </h2>
-          <p className="text-2xl font-bold text-gray-800">What Our Clients Say</p>
+          <p className="text-[42px] font-bold text-purple-800">What Our Clients Say</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
