@@ -34,10 +34,10 @@ const LatestNewsBlogs = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between mb-8">
           <div>
-            <h2 className="text-sm font-semibold text-purple-600 uppercase tracking-wide mb-1">News & Blogs</h2>
-            <p className="text-2xl font-bold text-gray-800">Our Latest News & Blogs</p>
+            <h2 className="text-[24px] font-semibold text-gray-600 uppercase tracking-wide mb-3">News & Blogs</h2>
+            <p className="text-[42px] font-bold text-purple-800">Our Latest News & Blogs</p>
           </div>
-          <a href="/blog" className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-md transition duration-300">
+          <a href="/blog" className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300">
             View All Blogs
           </a>
         </div>
