@@ -1,19 +1,17 @@
 import Layout from '@/layout/layout/layout'
-import ContactSection from '@/sections/contact-section'
+import FAQSection from '@/sections/faqs-page-section'
 import FeaturesSection from '@/sections/features-section'
 import NewsletterSubscription from '@/sections/news-latter-subscription'
-import Breadcrumbs from '@/ui/Breadcrumbs'
 import React from 'react'
 
-const Contact = () => {
+const FAQs = () => {
   return (
     <Layout>
-      <Breadcrumbs />
-      <ContactSection />
-      <FeaturesSection />
+      <FAQSection/>
+      <FeaturesSection/>
       <NewsletterSubscription/>
     </Layout>
   )
 }
 
-export default Contact
+export default FAQs
