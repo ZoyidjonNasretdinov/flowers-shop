@@ -131,17 +131,10 @@ const TopSellerProducts = () => {
         {/* Holiday Sales Banner */}
         <div className="relative rounded-lg overflow-hidden shadow-md h-[800px]">
           <div className="relative  md:h-72 grid grid-cols-6  gap-4">
-            <div className="col-span-1 relative">
+            <div className="col-span-1 relative rounded-lg">
               <Image src="/assets/top-seller-left-image.jpg" alt="Holiday Sales Banner" layout="fill" objectFit="cover" />
             </div>
             <div className="col-span-4 relative h-[800px] bg-purple-600 bg-opacity-80 flex flex-col items-center justify-center text-white text-center p-6">
-              <Image
-                src="/assets/top-seller-main-bg.png"
-                alt="Holiday Sales Banner"
-                width={100}
-                height={100}
-                className="absolute top-0 left-0 w-full h-full object-cover"
-              />
               <h2 className="text-[144px] md:text-2xl font-bold mb-2">Holiday Sales</h2>
               <p className="mb-4">Get 50% off - Limited Time Offer!</p>
               <div className="flex gap-4 mb-4">
